@@ -1,0 +1,38 @@
+2024-01-05 09:15:44,050 - reader - INFO - Reading data from file: ./sample.yaml
+2024-01-05 09:15:44,053 - yamlparser - INFO - Finished parsing. # of endpoints: 4
+2024-01-05 09:15:44,053 - yamlparser - INFO - Endpoint(name=fetch index page, url=https://fetch.com/, domain=fetch.com, method=GET, headers={'user-agent': 'fetch-synthetic-monitor'}, body=None)
+2024-01-05 09:15:44,053 - yamlparser - INFO - Endpoint(name=fetch careers page, url=https://fetch.com/careers, domain=fetch.com, method=GET, headers={'user-agent': 'fetch-synthetic-monitor'}, body=None)
+2024-01-05 09:15:44,053 - yamlparser - INFO - Endpoint(name=fetch some fake post endpoint, url=https://fetch.com/some/post/endpoint, domain=fetch.com, method=POST, headers={'content-type': 'application/json', 'user-agent': 'fetch-synthetic-monitor'}, body={'foo': 'bar'})
+2024-01-05 09:15:44,053 - yamlparser - INFO - Endpoint(name=fetch rewards index page, url=https://www.fetchrewards.com/, domain=www.fetchrewards.com, method=GET, headers=None, body=None)
+2024-01-05 09:15:44,053 - __main__ - INFO - Health check initiated
+2024-01-05 09:15:44,188 - caller - INFO - Called: Endpoint(name=fetch index page, url=https://fetch.com/, domain=fetch.com, method=GET, headers={'user-agent': 'fetch-synthetic-monitor'}, body=None), Received: Response(status_code=200, latency=0.082442, outcome=Outcome.UP)
+2024-01-05 09:15:44,272 - caller - INFO - Called: Endpoint(name=fetch careers page, url=https://fetch.com/careers, domain=fetch.com, method=GET, headers={'user-agent': 'fetch-synthetic-monitor'}, body=None), Received: Response(status_code=200, latency=0.080584, outcome=Outcome.UP)
+2024-01-05 09:15:44,355 - caller - INFO - Called: Endpoint(name=fetch some fake post endpoint, url=https://fetch.com/some/post/endpoint, domain=fetch.com, method=POST, headers={'content-type': 'application/json', 'user-agent': 'fetch-synthetic-monitor'}, body={'foo': 'bar'}), Received: Response(status_code=403, latency=0.080233, outcome=Outcome.DOWN)
+2024-01-05 09:15:44,700 - caller - INFO - Called: Endpoint(name=fetch rewards index page, url=https://www.fetchrewards.com/, domain=www.fetchrewards.com, method=GET, headers=None, body=None), Received: Response(status_code=200, latency=0.087339, outcome=Outcome.UP)
+2024-01-05 09:15:44,706 - checkhealth - INFO - fetch.com had 2 out of 3 as UP
+2024-01-05 09:15:44,706 - checkhealth - INFO - www.fetchrewards.com had 1 out of 1 as UP
+2024-01-05 09:15:44,706 - __main__ - INFO - Test cycle is completed.
+2024-01-05 09:15:59,707 - __main__ - INFO - Health check initiated
+2024-01-05 09:15:59,819 - caller - INFO - Called: Endpoint(name=fetch index page, url=https://fetch.com/, domain=fetch.com, method=GET, headers={'user-agent': 'fetch-synthetic-monitor'}, body=None), Received: Response(status_code=200, latency=0.107068, outcome=Outcome.UP)
+2024-01-05 09:15:59,920 - caller - INFO - Called: Endpoint(name=fetch careers page, url=https://fetch.com/careers, domain=fetch.com, method=GET, headers={'user-agent': 'fetch-synthetic-monitor'}, body=None), Received: Response(status_code=200, latency=0.088167, outcome=Outcome.UP)
+2024-01-05 09:16:00,006 - caller - INFO - Called: Endpoint(name=fetch some fake post endpoint, url=https://fetch.com/some/post/endpoint, domain=fetch.com, method=POST, headers={'content-type': 'application/json', 'user-agent': 'fetch-synthetic-monitor'}, body={'foo': 'bar'}), Received: Response(status_code=403, latency=0.082203, outcome=Outcome.DOWN)
+2024-01-05 09:16:00,262 - caller - INFO - Called: Endpoint(name=fetch rewards index page, url=https://www.fetchrewards.com/, domain=www.fetchrewards.com, method=GET, headers=None, body=None), Received: Response(status_code=200, latency=0.080818, outcome=Outcome.UP)
+2024-01-05 09:16:00,264 - checkhealth - INFO - fetch.com had 4 out of 6 as UP
+2024-01-05 09:16:00,264 - checkhealth - INFO - www.fetchrewards.com had 2 out of 2 as UP
+2024-01-05 09:16:00,264 - __main__ - INFO - Test cycle is completed.
+2024-01-05 09:16:15,270 - __main__ - INFO - Health check initiated
+2024-01-05 09:16:15,368 - caller - INFO - Called: Endpoint(name=fetch index page, url=https://fetch.com/, domain=fetch.com, method=GET, headers={'user-agent': 'fetch-synthetic-monitor'}, body=None), Received: Response(status_code=200, latency=0.092743, outcome=Outcome.UP)
+2024-01-05 09:16:15,460 - caller - INFO - Called: Endpoint(name=fetch careers page, url=https://fetch.com/careers, domain=fetch.com, method=GET, headers={'user-agent': 'fetch-synthetic-monitor'}, body=None), Received: Response(status_code=200, latency=0.085839, outcome=Outcome.UP)
+2024-01-05 09:16:15,550 - caller - INFO - Called: Endpoint(name=fetch some fake post endpoint, url=https://fetch.com/some/post/endpoint, domain=fetch.com, method=POST, headers={'content-type': 'application/json', 'user-agent': 'fetch-synthetic-monitor'}, body={'foo': 'bar'}), Received: Response(status_code=403, latency=0.085571, outcome=Outcome.DOWN)
+2024-01-05 09:16:15,800 - caller - INFO - Called: Endpoint(name=fetch rewards index page, url=https://www.fetchrewards.com/, domain=www.fetchrewards.com, method=GET, headers=None, body=None), Received: Response(status_code=200, latency=0.082163, outcome=Outcome.UP)
+2024-01-05 09:16:15,803 - checkhealth - INFO - fetch.com had 6 out of 9 as UP
+2024-01-05 09:16:15,803 - checkhealth - INFO - www.fetchrewards.com had 3 out of 3 as UP
+2024-01-05 09:16:15,803 - __main__ - INFO - Test cycle is completed.
+2024-01-05 09:16:30,805 - __main__ - INFO - Health check initiated
+2024-01-05 09:16:30,918 - caller - INFO - Called: Endpoint(name=fetch index page, url=https://fetch.com/, domain=fetch.com, method=GET, headers={'user-agent': 'fetch-synthetic-monitor'}, body=None), Received: Response(status_code=200, latency=0.106788, outcome=Outcome.UP)
+2024-01-05 09:16:31,006 - caller - INFO - Called: Endpoint(name=fetch careers page, url=https://fetch.com/careers, domain=fetch.com, method=GET, headers={'user-agent': 'fetch-synthetic-monitor'}, body=None), Received: Response(status_code=200, latency=0.082142, outcome=Outcome.UP)
+2024-01-05 09:16:31,086 - caller - INFO - Called: Endpoint(name=fetch some fake post endpoint, url=https://fetch.com/some/post/endpoint, domain=fetch.com, method=POST, headers={'content-type': 'application/json', 'user-agent': 'fetch-synthetic-monitor'}, body={'foo': 'bar'}), Received: Response(status_code=403, latency=0.077618, outcome=Outcome.DOWN)
+2024-01-05 09:16:31,335 - caller - INFO - Called: Endpoint(name=fetch rewards index page, url=https://www.fetchrewards.com/, domain=www.fetchrewards.com, method=GET, headers=None, body=None), Received: Response(status_code=200, latency=0.077595, outcome=Outcome.UP)
+2024-01-05 09:16:31,337 - checkhealth - INFO - fetch.com had 8 out of 12 as UP
+2024-01-05 09:16:31,337 - checkhealth - INFO - www.fetchrewards.com had 4 out of 4 as UP
+2024-01-05 09:16:31,337 - __main__ - INFO - Test cycle is completed.
